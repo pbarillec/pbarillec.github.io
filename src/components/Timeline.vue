@@ -11,7 +11,7 @@
       ></div>
 
       <div
-        v-for="(exp, index) in experiences"
+        v-for="(exp, index) in jsonData?.experiences"
         :key="index"
         class="relative mb-10 flex w-full items-center"
         :class="{ 'flex-row-reverse': index % 2 === 1 }"
@@ -22,7 +22,7 @@
         ></div>
 
         <!-- Contenu (Texte) -->
-        <div class="w-[20%] md:w-[48%] p-6 bg-gray-800 rounded-lg shadow-lg">
+        <div class="w-[45%] md:w-[48%] p-6 bg-gray-800 rounded-lg shadow-lg">
           <h3 class="text-xl font-semibold text-blue-400">{{ exp.title }}</h3>
           <p class="text-sm text-gray-400">{{ exp.period }}</p>
           <p class="text-white mt-2 leading-relaxed">{{ exp.description }}</p>
@@ -44,18 +44,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { inject } from "vue";
 
-const experiences = ref([]);
-
-onMounted(async () => {
-  try {
-    const response = await fetch("/data/cv_data.json");
-    if (!response.ok) throw new Error("Erreur de chargement du JSON");
-    const data = await response.json();
-    experiences.value = data.experiences;
-  } catch (error) {
-    console.error("Erreur lors du chargement du JSON :", error);
-  }
-});
+const jsonData = inject("jsonData"); // Récupère les expériences dynamiquement
 </script>

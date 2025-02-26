@@ -1,0 +1,125 @@
+{
+    "contact": {
+      "name": "Pierre Barillec",
+      "email": "barillec.pierre@gmail.com",
+      "phone": "+33652816865",
+      "linkedin": "https://www.linkedin.com/in/pierre-barillec-833779174/",
+      "github": "https://github.com/pbarillec",
+      "nationality": "French",
+      "age": 26,
+      "license": "B",
+      "languages": [
+        "French",
+        "English (TOEFL 80)"
+      ]
+    },
+    "currentRole": "Software Engineer at Apside",
+    "technologies": [
+      "Vue.js",
+      "TypeScript",
+      "Java",
+      "Git",
+      "Python",
+      "Rust",
+      "MySQL",
+      "Jenkins",
+      "SonarQube",
+      "Docker",
+      "ElasticSearch"
+    ],
+    "professionalSummary": "Solving complex technical challenges, developing efficient software solutions, and collaborating in Agile teams to deliver high-quality applications.",
+    "experiences": [
+      {
+        "title": "Software Engineer",
+        "company": "Apside",
+        "period": "March 2024 - Present",
+        "description": "Contributed to the evolution of embedded software for helicopters by adding features, fixing bugs, and optimizing performance under security constraints. Implemented CI/CD with Jenkins and integrated SonarQube for rigorous quality control.",
+        "technologies": [
+          "Java",
+          "Jenkins",
+          "SonarQube",
+          "CI/CD"
+        ]
+      },
+      {
+        "title": "Fullstack Developer",
+        "company": "Apside",
+        "period": "October 2023 - March 2024",
+        "description": "Developed a desktop application for mission tracking with an interactive calendar. Used Vue.js and TypeScript for the frontend, connected to a Java API and a MySQL database for efficient data management.",
+        "technologies": [
+          "Vue.js",
+          "TypeScript",
+          "Java",
+          "MySQL"
+        ]
+      },
+      {
+        "title": "Fullstack Developer",
+        "company": "Arkea",
+        "period": "March 2023 - August 2023",
+        "description": "Redesigned a UI in Vue.js and developed an API in Java, focusing on improving user interface and performance.",
+        "technologies": [
+          "JavaScript",
+          "Java",
+          "Vue.js",
+          "Git"
+        ]
+      },
+      {
+        "title": "Rust Developer",
+        "company": "Thales",
+        "period": "September 2022 - February 2023",
+        "description": "Developed a fault diagnosis algorithm in Rust, prioritizing security and portability through native functions.",
+        "technologies": [
+          "Python",
+          "Rust"
+        ]
+      },
+      {
+        "title": "Python Developer",
+        "company": "SOM Ligeron",
+        "period": "April 2021 - July 2021",
+        "description": "Developed and improved modules for the ArbreAnalyst software in collaboration with engineers, optimizing functionalities.",
+        "technologies": [
+          "Python"
+        ]
+      },
+      {
+        "title": "Developer (Intern)",
+        "company": "Prime Minister's Office",
+        "period": "July 2019 - December 2019",
+        "description": "Developed a ticketing tool, discovered Python, Docker, and ElasticSearch, and implemented initial automation processes.",
+        "technologies": [
+          "Python",
+          "Docker",
+          "ElasticSearch"
+        ]
+      }
+    ],
+    "formations": [
+      {
+        "diploma": "Expert in Information Technologies",
+        "school": "EPITECH Rennes",
+        "period": "2018 - 2023"
+      },
+      {
+        "diploma": "Graduate Diploma in Information Technology",
+        "school": "Long Beach University, California",
+        "period": "2021 - 2022"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Wine Cellar Inventory Management App",
+        "description": "Wine cellar management application developed with Vue.js for the front-end and Rust for the back-end, allowing efficient wine collection tracking and showcasing my full-stack development and API design skills."
+      },
+      {
+        "title": "Final Year Project - Naviarent",
+        "description": "Developed an iOS application. Participated in a Gamejam by creating a PC game on the theme of street art and a police chase mobile game."
+      },
+      {
+        "title": "Hot Pursuit – AI-Powered Pathfinding Game",
+        "description": "Chase game integrating pathfinding algorithms, developed in C++, highlighting my skills in performance optimization and solving complex problems."
+      }
+    ]
+}
