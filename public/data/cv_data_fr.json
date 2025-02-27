@@ -30,7 +30,7 @@
     "professionalSummary": "Résolution de défis techniques complexes, développement de solutions logicielles efficaces et collaboration au sein d’équipes Agile pour livrer des applications de haute qualité.",
     "experiences": [
       {
-        "title": "Ingéieur logiciel",
+        "title": "Ingénieur logiciel",
         "company": "Apside",
         "period": "Mars 2024 - Présent",
         "description": "Contribué à l’évolution d’un logiciel embarqué pour hélicoptères en ajoutant des fonctionnalités, corrigeant des bugs et optimisant les performances sous contraintes de sécurité. Mise en place du CI/CD avec Jenkins et intégration de SonarQube pour un contrôle qualité rigoureux.",
@@ -39,7 +39,8 @@
           "Jenkins",
           "SonarQube",
           "CI/CD"
-        ]
+        ],
+        "logo":"logos/apside.png"
       },
       {
         "title": "Développeur Fullstack",
@@ -51,7 +52,8 @@
           "TypeScript",
           "Java",
           "MySQL"
-        ]
+        ],
+        "logo":"logos/apside.png"
       },
       {
         "title": "Développeur Fullstack",
@@ -63,7 +65,8 @@
           "Java",
           "Vue.js",
           "Git"
-        ]
+        ],
+        "logo":"logos/arkea.png"
       },
       {
         "title": "Développeur Rust",
@@ -73,7 +76,8 @@
         "technologies": [
           "Python",
           "Rust"
-        ]
+        ],
+        "logo":"logos/thales.png"
       },
       {
         "title": "Développeur Python",
@@ -82,7 +86,8 @@
         "description": "Développement et amélioration des modules pour le logiciel ArbreAnalyst en collaboration avec les ingénieurs, optimisant les fonctionnalités.",
         "technologies": [
           "Python"
-        ]
+        ],
+        "logo":"logos/som.png"
       },
       {
         "title": "Dévelopeur Python",
@@ -93,7 +98,8 @@
           "Python",
           "Docker",
           "ElasticSearch"
-        ]
+        ],
+        "logo":"logos/premier_ministre.png"
       }
     ],
     "formations": [
@@ -111,15 +117,21 @@
     "projects": [
       {
         "title": "Application de gestion d’inventaire de cave à vin",
-        "description": "Application de gestion de cave à vin développée avec Vue.js en front-end et Rust en back-end, permettant de suivre efficacement une collection de vins et démontrant mes compétences en développement full-stack et conception d'API."
-      },
-      {
-        "titlee": "Projet de fin d’études - Naviarent",
-        "description": "Développement d'une application iOS. Participation à une Gamejam avec la création d'un jeu PC sur le thème du street art et d'un jeu mobile de course poursuite de police."
+        "description": "Application de gestion de cave à vin développée avec Vue.js en front-end et Rust en back-end, permettant de suivre efficacement une collection de vins et démontrant mes compétences en développement full-stack et conception d'API.",
+        "github": "https://github.com/pbarillec/LivreDeCave",
+        "download": "https://github.com/pbarillec/LivreDeCave/releases"
       },
       {
         "title": "Hot Pursuit – Jeu de recherche de chemin optimisé par l’IA",
-        "description": "Jeu de poursuite intégrant des algorithmes de pathfinding, développé en C++, mettant en avant mes compétences en optimisation de performance et en résolution de problèmes complexes."
+        "description": "Jeu mobile de course poursuite de police, développé en C#, avec Unity.",
+        "github": "https://github.com/pbarillec/Hot_Pursuit",
+        "download": "https://play.google.com/store/apps/details?id=com.ClubBabyPro.HotPursuit&pcampaignid=web_share"
+      },
+      {
+        "title": "Projet de fin d’études - Naviarent",
+        "description": "Développement d'une application iOS de location de Paddle en livre service. Rencontre avec des professionnels du milieu et échange sur le besoin.",
+        "github": "",
+        "download": ""
       }
     ]
   }

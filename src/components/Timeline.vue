@@ -1,7 +1,7 @@
 <template>
   <section class="max-w-5xl mx-auto py-10">
     <h2 class="text-3xl font-bold text-white text-center mb-10">
-      Expériences Professionnelles
+      {{ $t("titles.experience") }} 👨‍💻
     </h2>
 
     <div class="relative mx-auto w-4/5">
@@ -37,6 +37,16 @@
               {{ tech }}
             </span>
           </div>
+        </div>
+        <!-- Image du logo (alternance gauche/droite) -->
+        <div class="w-[30%] flex justify-center">
+          <img
+            v-if="exp.logo"
+            :src="exp.logo"
+            :alt="exp.company"
+            class="w-30 h-30 object-contain rounded-lg p-2"
+            :style="{ marginLeft: index % 2 === 0 ? '6rem' : '-6rem' }"
+          />
         </div>
       </div>
     </div>

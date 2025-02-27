@@ -23,9 +23,9 @@
       <h2 class="text-lg md:text-xl text-blue-400 mt-2">
         {{ jsonData?.currentRole }}
       </h2>
-      <p class="mt-4 text-lg text-gray-300 leading-relaxed min-h-[80px]">
+      <!-- <p class="mt-4 text-lg text-gray-300 leading-relaxed min-h-[80px]">
         {{ jsonData?.professionalSummary }}
-      </p>
+      </p> -->
 
       <!-- Infos de contact -->
       <div class="mt-4 text-gray-400">

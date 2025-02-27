@@ -103,7 +103,7 @@
         "period": "2018 - 2023"
       },
       {
-        "diploma": "Graduate Diploma in Information Technology",
+        "diploma": "Graduate Diploma in Information Technologies",
         "school": "Long Beach University, California",
         "period": "2021 - 2022"
       }
@@ -111,15 +111,21 @@
     "projects": [
       {
         "title": "Wine Cellar Inventory Management App",
-        "description": "Wine cellar management application developed with Vue.js for the front-end and Rust for the back-end, allowing efficient wine collection tracking and showcasing my full-stack development and API design skills."
-      },
-      {
-        "title": "Final Year Project - Naviarent",
-        "description": "Developed an iOS application. Participated in a Gamejam by creating a PC game on the theme of street art and a police chase mobile game."
+        "description": "Wine cellar management application developed with Vue.js for the front-end and Rust for the back-end, allowing efficient wine collection tracking and showcasing my full-stack development and API design skills.",
+        "github": "https://github.com/pbarillec/LivreDeCave",
+        "download": "https://github.com/pbarillec/LivreDeCave/releases"
       },
       {
         "title": "Hot Pursuit – AI-Powered Pathfinding Game",
-        "description": "Chase game integrating pathfinding algorithms, developed in C++, highlighting my skills in performance optimization and solving complex problems."
+        "description": "Mobile police chase racing game, developed in C# with Unity.",
+        "github": "https://github.com/pbarillec/Hot_Pursuit",
+        "download": "https://play.google.com/store/apps/details?id=com.ClubBabyPro.HotPursuit&hl=en"
+      },
+      {
+        "title": "Final Year Project - Naviarent",
+        "description": "iOS development of a self-service paddle rental application. Meeting with industry professionals and discussion of needs.",
+        "github": "",
+        "download": ""
       }
     ]
 }

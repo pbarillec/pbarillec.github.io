@@ -2,6 +2,9 @@
   <div class="bg-gray-900 min-h-screen">
     <HeroSection @change-language="switchLanguage" />
     <Timeline />
+    <Formations />
+    <Projects />
+    <DownloadCv />
   </div>
 </template>
 
@@ -10,6 +13,9 @@ import { ref, provide, watch, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import HeroSection from "./components/HeroSection.vue";
 import Timeline from "./components/Timeline.vue";
+import Formations from "./components/Formations.vue";
+import Projects from "./components/Projects.vue";
+import DownloadCv from "./components/DownloadCv.vue";
 
 const { locale } = useI18n(); // Récupère la langue actuelle
 const jsonData = ref({}); // Stocke les données du CV
