@@ -9,6 +9,7 @@ const messages = {
     },
     downloadCV: "Download Resume",
     phone: "Phone",
+    comingSoon: "More coming soon...",
   },
   fr: {
     titles: {
@@ -18,6 +19,7 @@ const messages = {
     },
     downloadCV: "Télécharger le CV",
     phone: "Téléphone",
+    comingSoon: "À venir prochainement...",
   },
 };
 

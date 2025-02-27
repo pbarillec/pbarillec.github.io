@@ -33,7 +33,7 @@
         "title": "Ingénieur logiciel",
         "company": "Apside",
         "period": "Mars 2024 - Présent",
-        "description": "Contribué à l’évolution d’un logiciel embarqué pour hélicoptères en ajoutant des fonctionnalités, corrigeant des bugs et optimisant les performances sous contraintes de sécurité. Mise en place du CI/CD avec Jenkins et intégration de SonarQube pour un contrôle qualité rigoureux.",
+        "description": "Contribution à l’évolution d’un logiciel embarqué pour hélicoptères en ajoutant des fonctionnalités, corrigeant des bugs et optimisant les performances sous contraintes de sécurité. Mise en place du CI/CD avec Jenkins et intégration de SonarQube pour un contrôle qualité rigoureux.",
         "technologies": [
           "Java",
           "Jenkins",
@@ -46,7 +46,7 @@
         "title": "Développeur Fullstack",
         "company": "Apside",
         "period": "Octobre 2023 - Mars 2024",
-        "description": "Développé une application desktop de suivi des missions avec un calendrier interactif. Utilisation de Vue.js et TypeScript pour le frontend, connecté à une API Java et une base MySQL pour une gestion efficace des données.",
+        "description": "Développement d'une application desktop de suivi des missions avec un calendrier interactif. Utilisation de Vue.js et TypeScript pour le frontend, connecté à une API Java et une base MySQL pour une gestion efficace des données.",
         "technologies": [
           "Vue.js",
           "TypeScript",

@@ -62,7 +62,7 @@
         v-if="jsonData?.projects && jsonData.projects.length % 2 !== 0"
         class="bg-gray-800 p-6 rounded-lg shadow-lg flex items-center justify-center text-gray-400 text-lg"
       >
-        More coming soon...
+        {{ $t("comingSoon") }}
       </div>
     </div>
   </section>
