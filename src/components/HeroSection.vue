@@ -89,6 +89,7 @@
 import { inject, ref, onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import Typewriter from "typewriter-effect/dist/core";
+import GraphemeSplitter from "grapheme-splitter";
 
 const jsonData = inject("jsonData"); // Récupère les données du JSON
 const switchLanguage = inject("switchLanguage"); // Récupère la fonction pour changer de langue
@@ -104,6 +105,7 @@ const startTypewriter = () => {
       loop: true,
       delay: 30,
       deleteSpeed: 20,
+      stringSplitter,
     })
       .typeString(roles1)
       .pauseFor(1000)
@@ -112,6 +114,11 @@ const startTypewriter = () => {
       .pauseFor(1000)
       .start();
   }
+};
+
+const stringSplitter = (string) => {
+  const splitter = new GraphemeSplitter();
+  return splitter.splitGraphemes(string);
 };
 
 // 🔥 Lancer au chargement et surveiller le changement de langue
