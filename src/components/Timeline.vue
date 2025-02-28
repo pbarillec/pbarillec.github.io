@@ -44,7 +44,7 @@
             v-if="exp.logo"
             :src="exp.logo"
             :alt="exp.company"
-            class="w-30 h-30 object-contain rounded-lg p-2"
+            class="w-30 h-30 object-contain rounded-lg p-2 bg-white bg-opacity-40 shadow-md"
             :style="{ marginLeft: index % 2 === 0 ? '6rem' : '-6rem' }"
           />
         </div>

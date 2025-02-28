@@ -27,7 +27,8 @@
       "Docker",
       "ElasticSearch"
     ],
-    "professionalSummary": "Solving complex technical challenges, developing efficient software solutions, and collaborating in Agile teams to deliver high-quality applications.",
+    
+    "professionalSummary": "Graduate from EPITECH Rennes, I enriched my career with an academic experience in California. Always on the lookout for new challenges, I'd be enthusiastic about the idea of working abroad to broaden my experience.",
     "experiences": [
       {
         "title": "Software Engineer",
@@ -39,7 +40,8 @@
           "Jenkins",
           "SonarQube",
           "CI/CD"
-        ]
+        ],
+        "logo":"logos/apside.png"
       },
       {
         "title": "Fullstack Developer",
@@ -51,7 +53,8 @@
           "TypeScript",
           "Java",
           "MySQL"
-        ]
+        ],
+        "logo":"logos/apside.png"
       },
       {
         "title": "Fullstack Developer",
@@ -63,7 +66,8 @@
           "Java",
           "Vue.js",
           "Git"
-        ]
+        ],
+        "logo":"logos/arkea.png"
       },
       {
         "title": "Rust Developer",
@@ -73,7 +77,8 @@
         "technologies": [
           "Python",
           "Rust"
-        ]
+        ],
+        "logo":"logos/thales.png"
       },
       {
         "title": "Python Developer",
@@ -82,7 +87,8 @@
         "description": "Developed and improved modules for the ArbreAnalyst software in collaboration with engineers, optimizing functionalities.",
         "technologies": [
           "Python"
-        ]
+        ],
+        "logo":"logos/som.png"
       },
       {
         "title": "Developer (Intern)",
@@ -93,7 +99,8 @@
           "Python",
           "Docker",
           "ElasticSearch"
-        ]
+        ],
+        "logo":"logos/premier_ministre.png"
       }
     ],
     "formations": [
