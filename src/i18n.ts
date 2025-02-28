@@ -10,6 +10,8 @@ const messages = {
     downloadCV: "Download Resume",
     phone: "Phone",
     comingSoon: "More coming soon...",
+    typewriter1: "Fullstack Developer 🚀",
+    typewriter2: "Software Engineer 🖥️",
   },
   fr: {
     titles: {
@@ -20,6 +22,7 @@ const messages = {
     downloadCV: "Télécharger le CV",
     phone: "Téléphone",
     comingSoon: "À venir prochainement...",
+    typewriter: ["Développeur Fullstack 🚀", "Ingénieur Logiciel 🖥️"],
   },
 };
 

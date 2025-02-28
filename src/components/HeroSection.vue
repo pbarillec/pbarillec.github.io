@@ -86,29 +86,35 @@
 </template>
 
 <script setup>
-import { inject, ref, onMounted } from "vue";
+import { inject, ref, onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import Typewriter from "typewriter-effect/dist/core";
 
 const jsonData = inject("jsonData"); // Récupère les données du JSON
 const switchLanguage = inject("switchLanguage"); // Récupère la fonction pour changer de langue
-const { locale } = useI18n(); // Récupère la langue active
+const { t, locale } = useI18n(); // Récupère la langue active
 
 const typewriterTarget = ref(null);
 
-onMounted(() => {
+const startTypewriter = () => {
   if (typewriterTarget.value) {
-    new Typewriter(typewriterTarget.value, {
+    const roles1 = t("typewriter1");
+    const roles2 = t("typewriter2");
+    const typewriter = new Typewriter(typewriterTarget.value, {
       loop: true,
       delay: 30,
       deleteSpeed: 20,
     })
-      .typeString("Développeur Fullstack 🚀")
+      .typeString(roles1)
       .pauseFor(1000)
       .deleteAll()
-      .typeString("Ingénieur Logiciel 🖥️")
+      .typeString(roles2)
       .pauseFor(1000)
       .start();
   }
-});
+};
+
+// 🔥 Lancer au chargement et surveiller le changement de langue
+onMounted(startTypewriter);
+watch(locale, startTypewriter);
 </script>
