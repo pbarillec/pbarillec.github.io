@@ -22,7 +22,8 @@ const messages = {
     downloadCV: "Télécharger le CV",
     phone: "Téléphone",
     comingSoon: "À venir prochainement...",
-    typewriter: ["Développeur Fullstack 🚀", "Ingénieur Logiciel 🖥️"],
+    typewriter1: "Développeur Fullstack  🚀",
+    typewriter2: "Ingénieur Logiciel 🖥️",
   },
 };
 
