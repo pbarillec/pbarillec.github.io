@@ -58,7 +58,7 @@
       {
         "title": "Développeur Fullstack",
         "company": "Arkea",
-        "period": "Mars 2023 - Août 2023",
+        "period": "Septembre 2022 - Août 2023",
         "description": "Redesign d’une IHM en Vue.js et création d’une API en Java, avec une refonte centrée sur l’amélioration de l’interface utilisateur et de la performance.",
         "technologies": [
           "JavaScript",
@@ -71,7 +71,7 @@
       {
         "title": "Développeur Rust",
         "company": "Thales",
-        "period": "Septembre 2022 - Février 2023",
+        "period": "Septembre 2021 - Juillet 2022",
         "description": "Développement d’un algorithme de diagnostic de pannes en Rust, priorisant la sécurité et la portabilité via des fonctions natives.",
         "technologies": [
           "Python",
