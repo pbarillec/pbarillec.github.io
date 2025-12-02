@@ -32,7 +32,7 @@
       {
         "title": "Ingénieur logiciel",
         "company": "Apside",
-        "period": "Mars 2024 - Présent",
+        "period": "Mars 2024 - Novembre 2025",
         "description": "Contribution à l’évolution d’un logiciel embarqué pour hélicoptères en ajoutant des fonctionnalités, corrigeant des bugs et optimisant les performances sous contraintes de sécurité. Mise en place du CI/CD avec Jenkins et intégration de SonarQube pour un contrôle qualité rigoureux.",
         "technologies": [
           "Java",
@@ -115,6 +115,12 @@
       }
     ],
     "projects": [
+      {
+        "title": "Application de suivi d'investissements boursiers",
+        "description": "Application bureautique développé avec Vue.js en front-end et Rust en back-end, permettant de suivre et analyser un portefeuille d'actions en temps réel via une API externe, démontrant mes compétences en développement full-stack et intégration d'API.",
+        "github": "https://github.com/pbarillec/stock-dashboard",
+        "download": ""
+      },
       {
         "title": "Application de gestion d’inventaire de cave à vin",
         "description": "Application de gestion de cave à vin développée avec Vue.js en front-end et Rust en back-end, permettant de suivre efficacement une collection de vins et démontrant mes compétences en développement full-stack et conception d'API.",
