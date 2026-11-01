@@ -16,7 +16,7 @@
             v-if="exp.logo"
             :src="exp.logo"
             :alt="exp.company"
-            class="w-16 h-16 object-contain bg-white bg-opacity-40 rounded-lg p-2 shadow-md"
+            class="w-24 h-16 object-contain bg-white rounded-lg p-2 shadow-md shrink-0"
           />
           <div>
             <h3 class="text-xl font-semibold text-blue-400">{{ exp.title }}</h3>
@@ -79,7 +79,7 @@
             v-if="exp.logo"
             :src="exp.logo"
             :alt="exp.company"
-            class="w-30 h-30 object-contain rounded-lg p-2 bg-white bg-opacity-60 shadow-md"
+            class="w-48 h-20 object-contain rounded-lg p-3 bg-white shadow-md"
             :style="{ marginLeft: index % 2 === 0 ? '6rem' : '-6rem' }"
           />
         </div>
