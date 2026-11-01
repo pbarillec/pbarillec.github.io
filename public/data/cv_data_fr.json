@@ -25,7 +25,14 @@
       "Jenkins",
       "SonarQube",
       "Docker",
-      "ElasticSearch"
+      "ElasticSearch",
+      "PostgreSQL",
+      "Neo4j",
+      "Redis",
+      "Celery",
+      "Podman",
+      "Linux",
+      "Cocos Creator"
     ],
     "professionalSummary": "Diplômé d’EPITECH Rennes, j’ai enrichi mon parcours avec une expérience académique en Californie. Toujours en quête de nouveaux défis, je serais enthousiaste à l'idée de travailler à l’international et ainsi enrichir mes expériences.",
     "experiences": [
