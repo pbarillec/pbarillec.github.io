@@ -152,8 +152,8 @@
         "download": "https://github.com/pbarillec/LivreDeCave/releases"
       },
       {
-        "title": "Hot Pursuit – Jeu de recherche de chemin optimisé par l’IA",
-        "description": "Jeu mobile de course poursuite de police, développé en C#, avec Unity.",
+        "title": "Hot Pursuit – Jeu mobile de course-poursuite",
+        "description": "Jeu mobile de course-poursuite contre la police, développé en C# avec Unity : les véhicules de police traquent le joueur grâce à des algorithmes de recherche de chemin. Publié sur Google Play.",
         "github": "https://github.com/pbarillec/Hot_Pursuit",
         "download": "https://play.google.com/store/apps/details?id=com.ClubBabyPro.HotPursuit&pcampaignid=web_share"
       },
