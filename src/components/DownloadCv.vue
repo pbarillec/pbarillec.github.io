@@ -16,101 +16,103 @@ import jsPDF from "jspdf";
 const { t } = useI18n();
 const jsonData = inject("jsonData"); // Récupère les données dynamiquement
 
-// Fonction pour gérer le saut de page si le contenu dépasse
-const checkPageOverflow = (doc, yOffset) => {
-  if (yOffset > 270) {
-    // 270 est la limite avant qu'on dépasse la page
-    doc.addPage();
-    return 20; // Reprendre le texte en haut de la nouvelle page
+const MARGIN_X = 20;
+const MARGIN_TOP = 20;
+const PAGE_BOTTOM = 280; // Limite basse avant de passer à la page suivante
+const TEXT_WIDTH = 170;
+const LINE_HEIGHT = 6;
+
+// Les polices standard de jsPDF ne gèrent pas les emojis ni les espaces
+// insécables fines : on les nettoie pour éviter les caractères parasites.
+const clean = (text) =>
+  String(text ?? "")
+    .replace(/[  ]/g, " ")
+    .replace(/[\u{1F000}-\u{1FFFF}☀-➿️‍]/gu, "")
+    .trim();
+
+// Écrit un texte en le découpant en lignes, avec saut de page ligne par ligne.
+// Retourne la position verticale suivante.
+const writeText = (doc, text, y) => {
+  const lines = doc.splitTextToSize(clean(text), TEXT_WIDTH);
+  for (const line of lines) {
+    if (y > PAGE_BOTTOM) {
+      doc.addPage();
+      y = MARGIN_TOP;
+    }
+    doc.text(line, MARGIN_X, y);
+    y += LINE_HEIGHT;
   }
-  return yOffset;
+  return y;
+};
+
+const writeSectionTitle = (doc, title, y) => {
+  if (y > PAGE_BOTTOM - 20) {
+    doc.addPage();
+    y = MARGIN_TOP;
+  }
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(16);
+  y = writeText(doc, title, y);
+  doc.setFontSize(12);
+  return y + 2;
+};
+
+// Écrit un bloc : un titre en gras, puis un texte optionnel
+const writeEntry = (doc, heading, body, y) => {
+  doc.setFont("helvetica", "bold");
+  y = writeText(doc, heading, y);
+  doc.setFont("helvetica", "normal");
+  if (body) y = writeText(doc, body, y);
+  return y + 4;
 };
 
 // Fonction pour générer le PDF
 const generatePDF = () => {
   if (!jsonData.value) return;
 
+  const { contact, experiences, formations, projects } = jsonData.value;
   const doc = new jsPDF();
 
   // Titre du CV
   doc.setFont("helvetica", "bold");
   doc.setFontSize(22);
-  doc.text(jsonData.value.contact.name, 105, 20, { align: "center" });
+  doc.text(contact.name, 105, 20, { align: "center" });
 
   // Infos de contact
   doc.setFontSize(12);
   doc.setFont("helvetica", "normal");
-  doc.text(`Email: ${jsonData.value.contact.email}`, 20, 40);
-  doc.text(`${t("phone")}: ${jsonData.value.contact.phone}`, 20, 50);
-  doc.text(`LinkedIn: ${jsonData.value.contact.linkedin}`, 20, 60);
-  doc.text(`GitHub: ${jsonData.value.contact.github}`, 20, 70);
+  doc.text(`Email: ${contact.email}`, MARGIN_X, 40);
+  doc.text(`${t("phone")}: ${contact.phone}`, MARGIN_X, 50);
+  doc.text(`LinkedIn: ${contact.linkedin}`, MARGIN_X, 60);
+  doc.text(`GitHub: ${contact.github}`, MARGIN_X, 70);
+
+  let y = 90;
 
   // Expériences professionnelles
-  let yOffset = 90;
-  doc.setFontSize(16);
-  doc.setFont("helvetica", "bold");
-  doc.text(t("titles.experience"), 20, yOffset);
-
-  doc.setFontSize(12);
-  doc.setFont("helvetica", "normal");
-
-  jsonData.value.experiences.forEach((exp) => {
-    yOffset += 10;
-    yOffset = checkPageOverflow(doc, yOffset); // Vérifie si on doit passer à la page suivante
-    doc.text(`${exp.period} - ${exp.title}`, 20, yOffset);
-
-    yOffset += 7;
-    yOffset = checkPageOverflow(doc, yOffset);
-    doc.text(exp.description, 20, yOffset, { maxWidth: 170 });
-
-    yOffset += 15;
+  y = writeSectionTitle(doc, t("titles.experience"), y);
+  experiences.forEach((exp) => {
+    const heading = `${exp.period} - ${exp.title}${exp.company ? ` (${exp.company})` : ""}`;
+    y = writeEntry(doc, heading, exp.description, y);
   });
 
   // Formations
-  yOffset += 10;
-  yOffset = checkPageOverflow(doc, yOffset);
-  doc.setFontSize(16);
-  doc.setFont("helvetica", "bold");
-  doc.text(t("titles.education"), 20, yOffset);
-
-  doc.setFontSize(12);
-  doc.setFont("helvetica", "normal");
-
-  jsonData.value.formations.forEach((formation) => {
-    yOffset += 10;
-    yOffset = checkPageOverflow(doc, yOffset);
-    doc.text(`${formation.period} - ${formation.diploma}`, 20, yOffset);
-
-    yOffset += 7;
-    yOffset = checkPageOverflow(doc, yOffset);
-    doc.text(formation.school, 20, yOffset);
-
-    yOffset += 10;
+  y = writeSectionTitle(doc, t("titles.education"), y + 6);
+  formations.forEach((formation) => {
+    y = writeEntry(
+      doc,
+      `${formation.period} - ${formation.diploma}`,
+      formation.school,
+      y,
+    );
   });
 
   // Projets
-  yOffset += 10;
-  yOffset = checkPageOverflow(doc, yOffset);
-  doc.setFontSize(16);
-  doc.setFont("helvetica", "bold");
-  doc.text(t("titles.projects"), 20, yOffset);
-
-  doc.setFontSize(12);
-  doc.setFont("helvetica", "normal");
-
-  jsonData.value.projects.forEach((project) => {
-    yOffset += 10;
-    yOffset = checkPageOverflow(doc, yOffset);
-    doc.text(project.title, 20, yOffset);
-
-    yOffset += 7;
-    yOffset = checkPageOverflow(doc, yOffset);
-    doc.text(project.description, 20, yOffset, { maxWidth: 170 });
-
-    yOffset += 10;
+  y = writeSectionTitle(doc, t("titles.projects"), y + 6);
+  projects.forEach((project) => {
+    y = writeEntry(doc, project.title, project.description, y);
   });
 
   // Télécharger le PDF
-  doc.save(`CV_${jsonData.value.contact.name}.pdf`);
+  doc.save(`CV_${contact.name}.pdf`);
 };
 </script>
