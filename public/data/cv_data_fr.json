@@ -141,9 +141,10 @@
     "projects": [
       {
         "title": "Laowai Survival – Jeu mobile narratif de survie",
-        "description": "Jeu mobile Android publié sur Google Play, développé en TypeScript avec Cocos Creator : 45 événements illustrés, modes campagne de 15 jours et Endless, guide contextuel de mots chinois, localisation FR/EN, publicités récompensées (AdMob) et classement Google Play Games. Conception, développement, intégration native Android et publication sur le Play Store.",
+        "description": "Jeu mobile Android publié sur Google Play, développé en TypeScript avec Cocos Creator : 45 événements illustrés, modes campagne de 15 jours et Endless, guide contextuel de mots chinois, localisation FR/EN, publicités récompensées (AdMob) et classement Google Play Games. Projet solo : conception, développement, intégration native Android et publication sur le Play Store.",
         "github": "https://github.com/pbarillec/laowai-survival-cocos",
-        "download": "https://play.google.com/store/apps/details?id=com.clubbabypro.laowaisurvival"
+        "download": "https://play.google.com/store/apps/details?id=com.clubbabypro.laowaisurvival",
+        "website": "https://clubbabypro.fr/#/laowai-survival"
       },
       {
         "title": "Application de gestion d’inventaire de cave à vin",
@@ -153,8 +154,9 @@
       },
       {
         "title": "Hot Pursuit – Jeu mobile de course-poursuite",
-        "description": "Jeu mobile de course-poursuite contre la police, développé en C# avec Unity : les véhicules de police traquent le joueur grâce à des algorithmes de recherche de chemin. Publié sur Google Play.",
+        "description": "Jeu mobile de course-poursuite contre la police, développé en C# avec Unity : les véhicules de police traquent le joueur grâce à des algorithmes de recherche de chemin. Projet d’équipe (5 développeurs), publié sur Google Play.",
         "github": "https://github.com/pbarillec/Hot_Pursuit",
+        "website": "https://clubbabypro.fr/#/hotpursuit",
         "download": "https://play.google.com/store/apps/details?id=com.ClubBabyPro.HotPursuit&pcampaignid=web_share"
       },
       {
