@@ -13,7 +13,7 @@
         "English (TOEFL 80)"
       ]
     },
-    "currentRole": "Software Engineer at Apside",
+    "currentRole": "Tech Lead & Fullstack Developer at Airbus China (VIE)",
     "technologies": [
       "Vue.js",
       "TypeScript",
@@ -30,6 +30,23 @@
     
     "professionalSummary": "Graduate from EPITECH Rennes, I enriched my career with an academic experience in California. Always on the lookout for new challenges, I'd be enthusiastic about the idea of working abroad to broaden my experience.",
     "experiences": [
+      {
+        "title": "Tech Lead & Fullstack Developer (VIE)",
+        "company": "Airbus China",
+        "period": "January 2026 - Present",
+        "description": "Technical lead and developer of a secure legal compliance engine, based in Beijing. Designed a workflow for centralized management of SAP holds, enabling collaboration between legal and finance teams and guaranteeing an irrefutable audit trail of every decision. Built an asynchronous pipeline analyzing 9,500 SAP entries and processing 800,000 profiles in 20 minutes, with NLP extraction and a graph engine (Neo4j) to dynamically compute inherited risks. Rootless deployment with Podman on Linux servers, security audits (SAT) and LUKS2 encryption.",
+        "technologies": [
+          "Python",
+          "Celery",
+          "Redis",
+          "PostgreSQL",
+          "Neo4j",
+          "NLP",
+          "Podman",
+          "Linux"
+        ],
+        "logo": ""
+      },
       {
         "title": "Software Engineer",
         "company": "Apside",
