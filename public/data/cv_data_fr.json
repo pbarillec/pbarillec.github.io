@@ -116,6 +116,12 @@
     ],
     "projects": [
       {
+        "title": "Laowai Survival – Jeu mobile narratif de survie",
+        "description": "Jeu mobile Android publié sur Google Play, développé en TypeScript avec Cocos Creator : 45 événements illustrés, modes campagne de 15 jours et Endless, guide contextuel de mots chinois, localisation FR/EN, publicités récompensées (AdMob) et classement Google Play Games. Conception, développement, intégration native Android et publication sur le Play Store.",
+        "github": "https://github.com/pbarillec/laowai-survival-cocos",
+        "download": ""
+      },
+      {
         "title": "Application de gestion d’inventaire de cave à vin",
         "description": "Application de gestion de cave à vin développée avec Vue.js en front-end et Rust en back-end, permettant de suivre efficacement une collection de vins et démontrant mes compétences en développement full-stack et conception d'API.",
         "github": "https://github.com/pbarillec/LivreDeCave",
