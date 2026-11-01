@@ -116,12 +116,6 @@
     ],
     "projects": [
       {
-        "title": "Application de suivi d'investissements boursiers",
-        "description": "Application bureautique développé avec Vue.js en front-end et Rust en back-end, permettant de suivre et analyser un portefeuille d'actions en temps réel via une API externe, démontrant mes compétences en développement full-stack et intégration d'API.",
-        "github": "https://github.com/pbarillec/stock-dashboard",
-        "download": ""
-      },
-      {
         "title": "Application de gestion d’inventaire de cave à vin",
         "description": "Application de gestion de cave à vin développée avec Vue.js en front-end et Rust en back-end, permettant de suivre efficacement une collection de vins et démontrant mes compétences en développement full-stack et conception d'API.",
         "github": "https://github.com/pbarillec/LivreDeCave",

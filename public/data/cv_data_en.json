@@ -117,12 +117,6 @@
     ],
     "projects": [
       {
-        "title": "Stock Investment Tracking Application",
-        "description": "Desktop application developed with Vue.js for the frontend and Rust for the backend, allowing real-time tracking and analysis of a stock portfolio via an external API, showcasing my full-stack development skills and API integration.",
-        "github": "https://github.com/pbarillec/stock-dashboard",
-        "download": ""
-      },
-      {
         "title": "Wine Cellar Inventory Management App",
         "description": "Wine cellar management application developed with Vue.js for the front-end and Rust for the back-end, allowing efficient wine collection tracking and showcasing my full-stack development and API design skills.",
         "github": "https://github.com/pbarillec/LivreDeCave",
