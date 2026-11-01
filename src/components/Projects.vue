@@ -54,6 +54,28 @@
               <path d="M12 16l4-5h-3V4h-2v7H8l4 5zM5 19h14v2H5v-2z" />
             </svg>
           </a>
+
+          <a
+            v-if="project.website"
+            :href="project.website"
+            target="_blank"
+            rel="noopener"
+            class="p-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </a>
         </div>
       </div>
 
